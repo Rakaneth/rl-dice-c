@@ -159,6 +159,15 @@ int roll(const char* str) {
     return result;
 }
 
+int gauss_int(int median) {
+    int acc = 0;
+    int sides = median * 2 - 1;
+    for (int i=0; i<3; i++) {
+        acc += die_roll(1, sides);
+    }
+    return acc / 3;
+}
+
 
 
 
