@@ -31,7 +31,7 @@ typedef struct lex_t {
 static Lex* lex_create(const char* str) {
     Lex* l = (Lex*)malloc(sizeof(Lex));
     l->cursor = 0;
-    l->str = _strdup(str);
+    l->str = strdup(str);
     return l;
 }
 
