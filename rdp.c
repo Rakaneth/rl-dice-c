@@ -35,7 +35,7 @@ static Lex *lex_create(const char *str)
 {
     Lex *l = (Lex *)malloc(sizeof(Lex));
     l->cursor = 0;
-    l->str = strdup(str);
+    l->str = _strdup(str);
     return l;
 }
 
